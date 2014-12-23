@@ -19,10 +19,11 @@ define('WP_MVCJS_PLUGIN_URL', plugins_url( '' , WP_MVC_JS_PATH ) );
 define('WP_MVC_JS_URL',  WP_MVCJS_PLUGIN_URL . '/js/App.js' );
 
 
-include(WP_MVC_JS_PATH. "/includes/wp-mvc-js-main.php");
+require_once(WP_MVC_JS_PATH. "/includes/wp-mvc-js-main.php");
 
 
 $mvcjs = new WPMVCJS();
 $mvcjs->init();
+
 
 ?>

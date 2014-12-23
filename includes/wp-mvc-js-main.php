@@ -9,7 +9,7 @@ class WPMVCJS {
 
 	public function init() {
 		if (class_exists('WPJSPKG')) {
-			WPJSPKG::addScript('mvc-js', WP_MVCJS_PLUGIN_URL, '0.1');
+			WPJSPKG::addScript('mvc-js', 'WordPress MVC JavaScript', WP_MVC_JS_URL, '0.1');
 		}
 		add_action('admin_notices', array($this, "wp_mvc_js_adminnotice"));
 	}
